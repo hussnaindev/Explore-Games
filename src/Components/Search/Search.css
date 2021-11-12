@@ -1,0 +1,31 @@
+.Search
+{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.searchInput
+{
+    border: transparent;
+    border-radius: 1rem;
+    width: 15rem;
+    padding: .4rem 1rem;
+    outline: none;
+}
+
+.searchForm
+{
+    display: flex;
+    justify-content: center;
+}
+
+.submitButton
+{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+}
+

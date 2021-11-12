@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+.ShowGames_Container
+{
+  
+  
+}
+
+
+.ShowGames
+{
+  
+  margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1.7rem;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.featured_container
+{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+}
+
+.featured_div
+{
+  width: 15rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2rem;
+  border-bottom: .1rem solid orangered;
+}
+
+.featured_games
+{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .ShowGames {
+      flex-direction: column;
+    }
+  }

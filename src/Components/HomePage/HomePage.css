@@ -1,0 +1,19 @@
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .App
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Pagination
+  {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
