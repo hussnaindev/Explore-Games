@@ -2,7 +2,7 @@ import React from "react";
 import SingleGame from "../SingleGame/SingleGame";
 import "./ShowGames.css";
 
-const ShowGames = ({ games, searchRes, mode, open, setOpen,currentGame,setCurrentGame }) => {
+const ShowGames = ({ games, searchRes, mode,setMode, open, setOpen,currentGame,setCurrentGame }) => {
     console.log(mode);
     let timeout = 1000
 
@@ -17,7 +17,7 @@ const ShowGames = ({ games, searchRes, mode, open, setOpen,currentGame,setCurren
                 </div>
                 <div className="ShowGames">
                     {searchRes.map((game) => (
-                        <SingleGame game={game} open={open} timeout={timeout+=500} currentGame={currentGame} setCurrentGame={setCurrentGame} />
+                        <SingleGame game={game} open={open} setMode={setMode} timeout={timeout+=500} currentGame={currentGame} setCurrentGame={setCurrentGame} />
                     ))}
                 </div>
             </div>
@@ -33,7 +33,7 @@ const ShowGames = ({ games, searchRes, mode, open, setOpen,currentGame,setCurren
                 </div>
                 <div className="ShowGames">
                     {games.map((game) => (
-                        <SingleGame game={game} open={open} timeout={timeout+=500} currentGame={currentGame} setCurrentGame={setCurrentGame} />
+                        <SingleGame game={game} open={open} setMode={setMode} timeout={timeout+=500} currentGame={currentGame} setCurrentGame={setCurrentGame} />
                     ))}
                 </div>
             </div>

@@ -16,6 +16,7 @@
     margin-left: 1.7rem;
     flex-wrap: wrap;
     gap: 15px;
+    
 }
 
 .featured_container
@@ -41,8 +42,13 @@
   justify-content: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .ShowGames {
+      display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content:center ;
+      margin-left: 0;
+
     }
   }

@@ -13,7 +13,6 @@ import "./SingleGame.css";
 import { useState } from "react";
 import { Grow } from "@mui/material";
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
-import { List } from "rc-field-form";
 
 const Genres = ({ game }) => {
   const genres = game.genres.map((genre) => genre.name);
@@ -29,27 +28,21 @@ const Platforms = ({ game }) => {
 
 const SingleGame = ({ game, open,setMode,timeout, currentGame, setCurrentGame }) => {
     
-  
-    const linkTo = (link) => {
-        if (!window.location.href.includes(link))
-        {
-            window.open(link, "_self");
-        }
-    }
 
     const handleEvent = () =>
     {
-        const list = [game]
-        setCurrentGame(List)
-        console.log("list",list)
-        linkTo("/Game")
+        setCurrentGame(game)
+        console.log("my game",game)
+        setMode("GameDetails")
+        window.scrollTo(0,0)
     }
 
 
   return (
     <Grow in={open} {...(open ? { timeout: timeout} : {})}>
-      <div className="addShadow">
-        <Card className="SingleGame" sx={{ maxWidth: 310, minHeight: 460 }}>
+      <div className="SingleGame-Container">
+      <div className="addShadow" >
+        <Card className="SingleGame"  sx={{ maxWidth: 310, minHeight: 460 }}>
           <CardActionArea className="CardActionArea">
             <CardMedia
               component="img"
@@ -91,6 +84,7 @@ const SingleGame = ({ game, open,setMode,timeout, currentGame, setCurrentGame })
             </Button>
           </CardActions>
         </Card>
+      </div>
       </div>
     </Grow>
   );

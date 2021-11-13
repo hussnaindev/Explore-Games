@@ -29,15 +29,9 @@ export default function Navbar({games,setGames,searchRes,setSearchRes,mode,setMo
       setMode('SearchResult')
   }
 
-  const linkTo = (link) => {
-    if (!window.location.href.includes(link)) {
-        window.open(link, "_self");
-    }
-}
-
   return (
-      <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" className="Navbar">
+      <Box className="Navbar" sx={{ flexGrow: 1 }}>
+      <AppBar position="static" >
         <Toolbar className="toolbar">
           <IconButton
             size="large"
@@ -45,7 +39,7 @@ export default function Navbar({games,setGames,searchRes,setSearchRes,mode,setMo
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
-            onClick={() => linkTo('/Home')}
+            onClick={() => setMode("ShowGames")}
           >
             <HomeIcon />
           </IconButton>

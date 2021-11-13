@@ -10,12 +10,20 @@
 
 }
 
+.SingleGame
+{
+    max-width: 310;
+    min-height: 460;
+
+}
+
 .CardActionArea
 {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: .8rem;
+   
 }
 
 
@@ -38,4 +46,24 @@
 {
     display: flex;
     justify-content: center;   
+}
+
+@media only screen and (max-width: 950px)
+{
+    .addShadow
+    {
+        max-width: 50vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SingleGame-Container
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    
 }

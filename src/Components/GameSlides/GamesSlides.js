@@ -93,7 +93,7 @@ const GamesSlides = ({games}) =>
   {
     return(
       <div className="Carousel">
-      <Carousel className="carousel" interval="3000" infiniteLoop="true" autoPlay="true" useKeyboardArrows="true" autoFocus="true">
+      <Carousel interval="3000" infiniteLoop="true" autoPlay="true" useKeyboardArrows="true" autoFocus="true">
         {games.map(game => <Slides game={game}/>)}
       </Carousel>
 

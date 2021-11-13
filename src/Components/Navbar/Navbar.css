@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 
+.Navbar
+{
+    
+}
+
 .cateButton
 {
     font-family: fantasy;
@@ -13,7 +18,26 @@
 }
 .toolbar
 {
-
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
    
+}
+
+.Search
+{
+
+}
+
+
+@media only screen and (max-width: 950px) {
+    .toolbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .Navbar
+    {
+        width: 30%;
+    }
+    
+
+    
 }
