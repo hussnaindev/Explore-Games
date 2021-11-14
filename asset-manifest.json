@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Explore-Games/static/css/main.1f501baa.chunk.css",
+    "main.css": "/Explore-Games/static/css/main.3ae44e42.chunk.css",
     "main.js": "/Explore-Games/static/js/main.3808e420.chunk.js",
     "main.js.map": "/Explore-Games/static/js/main.3808e420.chunk.js.map",
     "runtime-main.js": "/Explore-Games/static/js/runtime-main.8f48aa7d.js",
@@ -10,7 +10,7 @@
     "static/js/2.22594248.chunk.js.map": "/Explore-Games/static/js/2.22594248.chunk.js.map",
     "index.html": "/Explore-Games/index.html",
     "static/css/2.ed1298f3.chunk.css.map": "/Explore-Games/static/css/2.ed1298f3.chunk.css.map",
-    "static/css/main.1f501baa.chunk.css.map": "/Explore-Games/static/css/main.1f501baa.chunk.css.map",
+    "static/css/main.3ae44e42.chunk.css.map": "/Explore-Games/static/css/main.3ae44e42.chunk.css.map",
     "static/js/2.22594248.chunk.js.LICENSE.txt": "/Explore-Games/static/js/2.22594248.chunk.js.LICENSE.txt",
     "static/media/img2.bd4c7386.jpg": "/Explore-Games/static/media/img2.bd4c7386.jpg",
     "static/media/img3.54c5948c.jpg": "/Explore-Games/static/media/img3.54c5948c.jpg",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.8f48aa7d.js",
     "static/css/2.ed1298f3.chunk.css",
     "static/js/2.22594248.chunk.js",
-    "static/css/main.1f501baa.chunk.css",
+    "static/css/main.3ae44e42.chunk.css",
     "static/js/main.3808e420.chunk.js"
   ]
 }
