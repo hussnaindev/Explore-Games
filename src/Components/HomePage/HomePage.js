@@ -6,9 +6,7 @@ import ShowGames from '../ShowGames/ShowGames'
 import GamesSlides from '../GameSlides/GamesSlides'
 import Pagination from '@mui/material/Pagination';
 import CircularProgress from '@mui/material/CircularProgress';
-import { Link } from 'react-router-dom'
 import './HomePage.css'
-import scroll from 'react-scroll'
 import GameDetail from '../GameDetail/GameDetail'
 import MediaQuery from "react-responsive";
 
@@ -51,7 +49,8 @@ const HomePage = ({ games,setGames,searchRes,setSearchRes,mode,setMode,open,setO
     return(
       <>
       {loading ? 
-      <div className="loading-icon"><CircularProgress  /></div>:
+      <div className="loading-icon"><CircularProgress  /></div>
+      :
         <div className="App">
         <div className="nav-and-slide">
              <MediaQuery query='(min-width: 950px)'>
