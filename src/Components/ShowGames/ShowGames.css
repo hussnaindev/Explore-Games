@@ -1,19 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
-.ShowGames_Container
-{
-  
-  
-}
-
 
 .ShowGames
 {
   
   margin-top: 20px;
     display: flex;
-    justify-content: flex-start;
-    margin-left: 1.7rem;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
     

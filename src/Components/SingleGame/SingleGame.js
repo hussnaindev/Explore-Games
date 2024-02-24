@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { CardActions } from "@mui/material";
 import { CardActionArea } from "@mui/material";
-import DownloadIcon from "@mui/icons-material/FileDownloadOutlined";
+import SearchIcon from '@mui/icons-material/Search';
 import Rating from "@mui/material/Rating";
 import "./SingleGame.css";
 import { useState } from "react";
@@ -40,9 +40,9 @@ const SingleGame = ({ game, open,setMode,timeout, currentGame, setCurrentGame })
 
   return (
     <Grow in={open} {...(open ? { timeout: timeout} : {})}>
-      <div className="SingleGame-Container">
+      <div className="SingleGame-Container" onClick={handleEvent}>
       <div className="addShadow" >
-        <Card className="SingleGame"  sx={{ maxWidth: 310, minHeight: 460 }}>
+        <Card className="SingleGame" >
           <CardActionArea className="CardActionArea">
             <CardMedia
               component="img"
@@ -79,8 +79,8 @@ const SingleGame = ({ game, open,setMode,timeout, currentGame, setCurrentGame })
             </CardContent>
           </CardActionArea>
           <CardActions className="CardAction">
-            <Button onClick={handleEvent} variant="outlined" endIcon={<DownloadIcon />}>
-              Download
+            <Button onClick={handleEvent} variant="outlined" endIcon={<SearchIcon />}>
+              Explore
             </Button>
           </CardActions>
         </Card>

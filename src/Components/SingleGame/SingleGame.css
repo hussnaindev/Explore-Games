@@ -12,8 +12,8 @@
 
 .SingleGame
 {
-    max-width: 310;
-    min-height: 460;
+    width: 410px;
+    min-height: 460px;
 
 }
 
@@ -61,7 +61,7 @@
     {
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: center;    
     }
 
 

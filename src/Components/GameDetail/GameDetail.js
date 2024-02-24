@@ -133,11 +133,11 @@ const GameDetail = ({currentGame}) =>
                    
                 </div>
 
-                <div className="downloadButton">
+                {/* <div className="downloadButton">
                     <Button color="primary" variant="outlined" endIcon={<DownloadIcon />}>
                         Download
                     </Button>
-                </div>
+                </div> */}
 
             </div>
           
