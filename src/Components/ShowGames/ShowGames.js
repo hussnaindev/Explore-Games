@@ -3,7 +3,6 @@ import SingleGame from "../SingleGame/SingleGame";
 import "./ShowGames.css";
 
 const ShowGames = ({ games, searchRes, mode,setMode, open, setOpen,currentGame,setCurrentGame }) => {
-    console.log(mode);
     let timeout = 1000
 
     if (mode === "SearchResult") {

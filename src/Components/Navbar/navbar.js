@@ -15,7 +15,6 @@ export default function Navbar({games,setGames,searchRes,setSearchRes,mode,setMo
 
   const searchByCategory = (category) =>
   {
-      console.log("my games",games)
       const searchResult = []
       games.forEach(game => game.genres.forEach(genre => {
         if(genre.name.toLowerCase() === category.toLowerCase())
@@ -23,7 +22,6 @@ export default function Navbar({games,setGames,searchRes,setSearchRes,mode,setMo
           searchResult.push(game)
         }
       }))
-      console.log(searchResult)
       setSearchRes(searchResult)
       setOpen(true)
       setMode('SearchResult')

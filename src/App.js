@@ -12,8 +12,6 @@ const App = () =>
   const [open, setOpen] = useState(true)
   const [currentGame,setCurrentGame] = useState({})
   
-  console.log("check games updated or not",games)
-  console.log("check mode upadated or not",mode)
   return(
     
     <>

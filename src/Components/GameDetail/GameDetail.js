@@ -16,25 +16,21 @@ import { useEffect } from 'react'
 
 const Genres = ({ game }) => {
     const genres = game.genres.map((genre) => genre.name);
-    console.log(genres);
     return genres.map((genre) => <span key={genre}> {genre} | </span>);
   };
 
   const Platforms = ({ game }) => {
     const platforms = game.platforms.map((p) => p.platform.name);
-    console.log(platforms);
     return platforms.map((platform) => <span key={platform}> {platform} | </span>);
   };
 
   const Stores = ({ game }) => {
     const stores = game.stores.map((s) => s.store.name);
-    console.log(stores);
     return stores.map((store) => <span key={store}> {store} | </span>);
   };
 
   const Screenshots = ({game}) => {
       const screenshots = game.short_screenshots.map(ss => ss.image)
-      console.log(screenshots)
       return screenshots.map(screenshot => <img src={screenshot} alt="game image" />)
   }
 
@@ -53,10 +49,7 @@ const GameDetail = ({currentGame}) =>
         setVideo("http://www.youtube.com/embed/"+response.data.items[0].id.videoId+"?autoplay=1&hd=1")
     },[])
 
-    console.log(video)
-
     const screenshots = currentGame.short_screenshots.map(ss => ss.image)
-    console.log(currentGame)
     return(
         <><div className="GameDetail-Container">
             <div className="GameDetail">

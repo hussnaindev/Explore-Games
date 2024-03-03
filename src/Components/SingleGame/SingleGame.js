@@ -16,13 +16,11 @@ import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 
 const Genres = ({ game }) => {
   const genres = game.genres.map((genre) => genre.name);
-  console.log(genres);
   return genres.map((genre) => <span key={genre}> {genre} </span>);
 };
 
 const Platforms = ({ game }) => {
   const platforms = game.platforms.map((p) => p.platform.name);
-  console.log(platforms);
   return platforms.map((platform) => <span key={platform}> {platform} </span>);
 };
 
@@ -32,7 +30,6 @@ const SingleGame = ({ game, open,setMode,timeout, currentGame, setCurrentGame })
     const handleEvent = () =>
     {
         setCurrentGame(game)
-        console.log("my game",game)
         setMode("GameDetails")
         window.scrollTo(0,0)
     }

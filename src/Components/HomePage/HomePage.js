@@ -21,26 +21,15 @@ const HomePage = ({ games,setGames,searchRes,setSearchRes,mode,setMode,open,setO
   const handleChange = (event, value) => {
     setPage(value);
     setLoading(true)
-    console.log("check",loading)
     window.scrollTo(0,0)
     setRefresh(refresh+1)
   };
 
   useEffect( async () => 
   {
-    try{
-      const gamesInDb = await axios.get(`https://api.rawg.io/api/games?key=c386a06690c748d297c21d874887883b&page=${page}`)
-      console.log(gamesInDb.data.results)
-      await setGames(gamesInDb.data.results)
-      console.log("useEffect working on each render ")
-      setLoading(false)
-    }
-
-    catch(error)
-    {
-      console.log(error)   
-    }
-
+    const gamesInDb = await axios.get(`https://api.rawg.io/api/games?key=c386a06690c748d297c21d874887883b&page=${page}`)
+    await setGames(gamesInDb.data.results)
+    setLoading(false)
   },[refresh])
   
 
