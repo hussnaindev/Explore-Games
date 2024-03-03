@@ -8,16 +8,13 @@ const Search = ({games,setGames,searchRes,setSearchRes,mode,setMode,setOpen}) =>
 
     const inputHandler = (event) =>
     {
-        console.log(event.target.value)
         setInputValue(event.target.value)
     }
 
     const searchGame = (event) =>
     {
         event.preventDefault()
-        console.log(games)
         const searchResult = games.filter(game => game.name.toLowerCase() === inputValue.toLowerCase())
-        console.log(searchResult)
         setSearchRes(searchResult)
         setOpen(true)
         setMode('SearchResult')
