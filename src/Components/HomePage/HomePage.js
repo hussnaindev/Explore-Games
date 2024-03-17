@@ -30,11 +30,8 @@ const HomePage = ({ games,setGames,searchRes,setSearchRes,mode,setMode,open,setO
   {
     /* eslint-disable */
     FS('setIdentity', {
-
       userId: uuid()
     });
-    console.log("REACT_APP_RAWG_API_BASE_URL: ", process.env.REACT_APP_RAWG_API_BASE_URL);
-    console.log("REACT_APP_RAWG_API_KEY: ", process.env.REACT_APP_RAWG_API_KEY);
     const gamesInDb = await axios.get(`${process.env.REACT_APP_RAWG_API_BASE_URL}/games?key=${process.env.REACT_APP_RAWG_API_KEY}&page=${page}`)
     await setGames(gamesInDb.data.results)
     setLoading(false)
