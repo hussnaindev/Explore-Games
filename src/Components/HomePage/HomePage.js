@@ -9,6 +9,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import './HomePage.css'
 import GameDetail from '../GameDetail/GameDetail'
 import MediaQuery from "react-responsive";
+import {v4 as uuid} from 'uuid';
 
 const HomePage = ({ games,setGames,searchRes,setSearchRes,mode,setMode,open,setOpen,currentGame,setCurrentGame} ) =>
 {
@@ -29,12 +30,7 @@ const HomePage = ({ games,setGames,searchRes,setSearchRes,mode,setMode,open,setO
   {
     /* eslint-disable */
     FS('setIdentity', {
-      uid: '125',
-      properties: {
-        displayName: 'John Smith',
-        email: 'johnsmith125@gmail.com',
-        reviewsWritten: 14
-      }
+      userId: uuid()
     });
     const gamesInDb = await axios.get(`https://api.rawg.io/api/games?key=c386a06690c748d297c21d874887883b&page=${page}`)
     await setGames(gamesInDb.data.results)
