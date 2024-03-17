@@ -27,6 +27,7 @@ const HomePage = ({ games,setGames,searchRes,setSearchRes,mode,setMode,open,setO
 
   useEffect( async () => 
   {
+    /* eslint-disable */
     FS('setIdentity', {
       uid: '125',
       properties: {
@@ -34,7 +35,7 @@ const HomePage = ({ games,setGames,searchRes,setSearchRes,mode,setMode,open,setO
         email: 'johnsmith125@gmail.com',
         reviewsWritten: 14
       }
-    });  /* eslint-disable */
+    });
     const gamesInDb = await axios.get(`https://api.rawg.io/api/games?key=c386a06690c748d297c21d874887883b&page=${page}`)
     await setGames(gamesInDb.data.results)
     setLoading(false)
