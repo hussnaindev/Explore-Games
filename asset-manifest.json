@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Explore-Games/static/css/main.78d4bdbe.css",
-    "main.js": "/Explore-Games/static/js/main.c336346d.js",
+    "main.js": "/Explore-Games/static/js/main.eb338b22.js",
     "static/media/img2.jpg": "/Explore-Games/static/media/img2.bd4c73869e499033cba7.jpg",
     "static/media/img3.jpg": "/Explore-Games/static/media/img3.54c5948ccf1a9b5e3226.jpg",
     "static/media/screen3.png": "/Explore-Games/static/media/screen3.9a57d78c3d3284e9a6ea.png",
     "static/media/play.png": "/Explore-Games/static/media/play.7ff0d5cfc6f9b63acc9d.png",
     "index.html": "/Explore-Games/index.html",
     "main.78d4bdbe.css.map": "/Explore-Games/static/css/main.78d4bdbe.css.map",
-    "main.c336346d.js.map": "/Explore-Games/static/js/main.c336346d.js.map"
+    "main.eb338b22.js.map": "/Explore-Games/static/js/main.eb338b22.js.map"
   },
   "entrypoints": [
     "static/css/main.78d4bdbe.css",
-    "static/js/main.c336346d.js"
+    "static/js/main.eb338b22.js"
   ]
 }
