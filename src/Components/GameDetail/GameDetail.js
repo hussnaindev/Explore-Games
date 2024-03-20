@@ -45,8 +45,11 @@ const GameDetail = ({currentGame}) =>
     }
 
     useEffect( async () => {
-        const response = await axios.get(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${currentGame.name}+game+trailer&key=AIzaSyCuMORohnS95h3-n4v-WToDOpte15YSQ-I`)
-        setVideo("http://www.youtube.com/embed/"+response.data.items[0].id.videoId+"?autoplay=1&hd=1")
+        const url = `${process.env.REACT_APP_YOUTUBE_API_BASE_URL}/search?part=snippet&maxResults=1&q=${currentGame.name}+game+trailer&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`;
+        const response = await axios.get(url);
+        const videoId = response.data.items[0].id.videoId;
+        const videoURL = `${process.env.REACT_APP_YOUTUBE_BASE_URL}/embed/${videoId}?autoplay=1&hd=1`;
+        setVideo(videoURL);
     },[])
 
     const screenshots = currentGame.short_screenshots.map(ss => ss.image)
