@@ -2,14 +2,8 @@ import React, { useState } from 'react'
 import './GameDetail.css'
 import { Rating } from '@mui/material'
 import play from './play.png'
-import img2 from './img2.jpg'
-import img3 from './img3.jpg'
-import {Carousels} from 'react-material-ui-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import DownloadIcon from "@mui/icons-material/FileDownloadOutlined";
-import Button from "@mui/material/Button";
-import PlayCircleFilledWhiteIcon from '@mui/icons-material/PlayCircleFilledWhite';
 import IconButton from '@mui/material/IconButton';
 import axios from 'axios'
 import { useEffect } from 'react'

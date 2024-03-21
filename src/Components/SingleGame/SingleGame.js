@@ -10,9 +10,7 @@ import { CardActionArea } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import Rating from "@mui/material/Rating";
 import "./SingleGame.css";
-import { useState } from "react";
 import { Grow } from "@mui/material";
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 
 const Genres = ({ game }) => {
   const genres = game.genres.map((genre) => genre.name);
