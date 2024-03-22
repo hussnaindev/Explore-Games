@@ -13,76 +13,66 @@ import "./SingleGame.css";
 import { Grow } from "@mui/material";
 
 const Genres = ({ game }) => {
-  const genres = game.genres.map((genre) => genre.name);
-  return genres.map((genre) => <span key={genre}> {genre} </span>);
+    const genres = game.genres.map((genre) => genre.name);
+    return genres.map((genre) => <span key={genre}> {genre} </span>);
 };
 
 const Platforms = ({ game }) => {
-  const platforms = game.platforms.map((p) => p.platform.name);
-  return platforms.map((platform) => <span key={platform}> {platform} </span>);
+    const platforms = game.platforms.map((p) => p.platform.name);
+    return platforms.map((platform) => <span key={platform}> {platform} </span>);
 };
 
-const SingleGame = ({ game, open,setMode,timeout, currentGame, setCurrentGame }) => {
-    
+const SingleGame = ({ game, open, setMode, timeout, currentGame, setCurrentGame }) => {
 
-    const handleEvent = () =>
-    {
+    const handleEvent = () => {
         setCurrentGame(game)
         setMode("GameDetails")
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
     }
 
-
-  return (
-    <Grow in={open} {...(open ? { timeout: timeout} : {})}>
-      <div className="SingleGame-Container" onClick={handleEvent}>
-      <div className="addShadow" >
-        <Card className="SingleGame" >
-          <CardActionArea className="CardActionArea">
-            <CardMedia
-              component="img"
-              height="300"
-              image={game.background_image}
-              alt="game img"
-            />
-            <CardContent className="CardContent">
-              <Typography
-                className="game_title"
-                gutterBottom
-                variant="h8"
-                fontFamily="Manrope"
-                component="div"
-              >
-                {game.name}
-              </Typography>
-              {/* 
-                 <Typography gutterBottom variant="h8" component="span">Genre</Typography>
-                 <Genres game={game} />
-                 <Typography gutterBottom variant="h8" component="div">Ratings: {game.rating}</Typography>
-                 <Typography gutterBottom variant="h8" component="span">Platforms: </Typography>
-                 <Platforms game={game}/>
-                 */}
-              <div className="rating_container">
-                <Rating
-                  className="rating"
-                  name="read-only"
-                  precision={0.5}
-                  value={game.rating}
-                  size="small"
-                />
-              </div>
-            </CardContent>
-          </CardActionArea>
-          <CardActions className="CardAction">
-            <Button onClick={handleEvent} variant="outlined" endIcon={<SearchIcon />}>
-              Explore
-            </Button>
-          </CardActions>
-        </Card>
-      </div>
-      </div>
-    </Grow>
-  );
+    return (
+        <Grow in={open} {...(open ? { timeout: timeout } : {})}>
+            <div className="SingleGame-Container" onClick={handleEvent}>
+                <div className="addShadow" >
+                    <Card className="SingleGame" >
+                        <CardActionArea className="CardActionArea">
+                            <CardMedia
+                                component="img"
+                                height="300"
+                                image={game.background_image}
+                                alt="game img"
+                            />
+                            <CardContent className="CardContent">
+                                <Typography
+                                    className="game_title"
+                                    gutterBottom
+                                    variant="h8"
+                                    fontFamily="Manrope"
+                                    component="div"
+                                >
+                                    {game.name}
+                                </Typography>
+                                <div className="rating_container">
+                                    <Rating
+                                        className="rating"
+                                        name="read-only"
+                                        precision={0.5}
+                                        value={game.rating}
+                                        size="small"
+                                    />
+                                </div>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions className="CardAction">
+                            <Button onClick={handleEvent} variant="outlined" endIcon={<SearchIcon />}>
+                                Explore
+                            </Button>
+                        </CardActions>
+                    </Card>
+                </div>
+            </div>
+        </Grow>
+    );
 };
 
 export default SingleGame;

@@ -2,11 +2,11 @@ import React from "react";
 import SingleGame from "../SingleGame/SingleGame";
 import "./ShowGames.css";
 
-const ShowGames = ({ games, searchRes, mode,setMode, open, setOpen,currentGame,setCurrentGame }) => {
+const ShowGames = ({ games, searchRes, mode, setMode, open, setOpen, currentGame, setCurrentGame }) => {
     let timeout = 1000
 
     if (mode === "SearchResult") {
-        
+
         return (
             <div className="ShowGames_Container">
                 <div className="featured_container">
@@ -16,14 +16,14 @@ const ShowGames = ({ games, searchRes, mode,setMode, open, setOpen,currentGame,s
                 </div>
                 <div className="ShowGames">
                     {searchRes.map((game) => (
-                        <SingleGame game={game} open={open} setMode={setMode} timeout={timeout+=500} currentGame={currentGame} setCurrentGame={setCurrentGame} />
+                        <SingleGame game={game} open={open} setMode={setMode} timeout={timeout += 500} currentGame={currentGame} setCurrentGame={setCurrentGame} />
                     ))}
                 </div>
             </div>
         );
     } else if (mode === "ShowGames") {
         return (
-           
+
             <div className="ShowGames_Container">
                 <div className="featured_container">
                     <div className="featured_div">
@@ -32,7 +32,7 @@ const ShowGames = ({ games, searchRes, mode,setMode, open, setOpen,currentGame,s
                 </div>
                 <div className="ShowGames">
                     {games.map((game) => (
-                        <SingleGame game={game} open={open} setMode={setMode} timeout={timeout+=500} currentGame={currentGame} setCurrentGame={setCurrentGame} />
+                        <SingleGame game={game} open={open} setMode={setMode} timeout={timeout += 500} currentGame={currentGame} setCurrentGame={setCurrentGame} />
                     ))}
                 </div>
             </div>
