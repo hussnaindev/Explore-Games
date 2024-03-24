@@ -147,7 +147,7 @@
 .screenshot-pics
 {
      
-    background-image: url('./screen3.png');
+    background-image: url('../../assets/images/screen3.png');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100vh;
