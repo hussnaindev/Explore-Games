@@ -31,47 +31,45 @@ const SingleGame = ({ game, open, setMode, timeout, currentGame, setCurrentGame 
     }
 
     return (
-        <Grow in={open} {...(open ? { timeout: timeout } : {})}>
-            <div className="SingleGame-Container" onClick={handleEvent}>
-                <div className="addShadow" >
-                    <Card className="SingleGame" >
-                        <CardActionArea className="CardActionArea">
-                            <CardMedia
-                                component="img"
-                                height="300"
-                                image={game.background_image}
-                                alt="game img"
-                            />
-                            <CardContent className="CardContent">
-                                <Typography
-                                    className="game_title"
-                                    gutterBottom
-                                    variant="h8"
-                                    fontFamily="Manrope"
-                                    component="div"
-                                >
-                                    {game.name}
-                                </Typography>
-                                <div className="rating_container">
-                                    <Rating
-                                        className="rating"
-                                        name="read-only"
-                                        precision={0.5}
-                                        value={game.rating}
-                                        size="small"
-                                    />
-                                </div>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions className="CardAction">
-                            <Button onClick={handleEvent} variant="outlined" endIcon={<SearchIcon />}>
-                                Explore
-                            </Button>
-                        </CardActions>
-                    </Card>
-                </div>
+        <div className="SingleGame-Container" onClick={handleEvent}>
+            <div className="addShadow" >
+                <Card className="SingleGame" >
+                    <CardActionArea className="CardActionArea">
+                        <CardMedia
+                            component="img"
+                            height="300"
+                            image={game.background_image}
+                            alt="game img"
+                        />
+                        <CardContent className="CardContent">
+                            <Typography
+                                className="game_title"
+                                gutterBottom
+                                variant="h8"
+                                fontFamily="Manrope"
+                                component="div"
+                            >
+                                {game.name}
+                            </Typography>
+                            <div className="rating_container">
+                                <Rating
+                                    className="rating"
+                                    name="read-only"
+                                    precision={0.5}
+                                    value={game.rating}
+                                    size="small"
+                                />
+                            </div>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions className="CardAction">
+                        <Button onClick={handleEvent} variant="outlined" endIcon={<SearchIcon />}>
+                            Explore
+                        </Button>
+                    </CardActions>
+                </Card>
             </div>
-        </Grow>
+        </div>
     );
 };
 
