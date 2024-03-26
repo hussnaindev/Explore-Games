@@ -10,17 +10,6 @@ import { CardActionArea } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import Rating from "@mui/material/Rating";
 import "./SingleGame.css";
-import { Grow } from "@mui/material";
-
-const Genres = ({ game }) => {
-    const genres = game.genres.map((genre) => genre.name);
-    return genres.map((genre) => <span key={genre}> {genre} </span>);
-};
-
-const Platforms = ({ game }) => {
-    const platforms = game.platforms.map((p) => p.platform.name);
-    return platforms.map((platform) => <span key={platform}> {platform} </span>);
-};
 
 const SingleGame = ({ game, open, setMode, timeout, currentGame, setCurrentGame }) => {
 
@@ -73,4 +62,4 @@ const SingleGame = ({ game, open, setMode, timeout, currentGame, setCurrentGame 
     );
 };
 
-export default SingleGame;
+export default SingleGame;  
