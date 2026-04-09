@@ -1,6 +1,6 @@
 **Project Description:**
 
-Welcome to ExploreGames, the definitive online destination for exploring an extensive library of PC games. Dive into a world of gaming with ExploreGames, a meticulously curated website designed to provide gamers with comprehensive information on a vast collection of PC games. With a focus on delivering a seamless user experience and intuitive navigation, ExploreGames offers an unparalleled wealth of game details, including basic information, platform availability, ratings, trailers, screenshots, genres, and release dates.
+Welcome to ExploreGames, the definitive online destination for exploring an extensive library of PC games. Dive into a world of gaming with ExploreGames, a meticulously curated website designed to provide gamers with comprehensive information on a vast collection of PC games. With a focus on delivering a seamless user experience and intuitive navigation, ExploreGames offers an unparalleled wealth of game details, including basic information, platform availability, ratings, trailers, screenshots, genres, and release dates
 
 **Key Features:**
 
